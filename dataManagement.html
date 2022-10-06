@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/datamanagement.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Admin panel</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-clinic-medical"></i>
+                        <div class="title">Personalia App</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./home.html">
+                        <i class="fas fa-th-large"></i>
+                        <div class="title">Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./dataManagement.html">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <div class="title">Data Managemenet</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <div class="title">Settings</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        <div class="title">Help</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="top-bar">
+                <div class="search">
+                    <input type="text" name="search" placeholder="search here">
+                    <label for="search"><i class="fas fa-search"></i></label>
+                </div>
+                <i class="fas fa-bell"></i>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h1>Data Management</h1>
+                    <a href="./createData.html">Add New Data</a>
+                </div>
+            </div>
+            <div class="tables">
+                <div class="last-attendance">
+                    <div class="heading">
+                        <h2>Last Attendance</h2>
+                        <br>
+                        <input type="search" oninput="filter_table(this, 'table_filter')" class="form_control"
+                        placeholder="Filter This Table...">
+                        <table class="_table table_sort">
+                            <thead>
+                              <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Address</th>
+                                <th width="50px">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody id="table_filter">
+                              <tr>
+                                <td>01</td>
+                                <td>Andi Kurniawan</td>
+                                <td>+6201770 xxxxxx</td>
+                                <td>Address One</td>
+                                <td>
+                                  <div class="action_btn">
+                                    <a href="./profile1.html" class="click_ripple_shine success" title="View">
+                                      <i class="icon fa fa-eye"></i>
+                                    </a>
+                                    <a href="./Update1.html" class="click_ripple_shine warning" title="Edit">
+                                      <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine danger" title="Delete">
+                                      <i class="far fa-trash-alt"></i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>02</td>
+                                <td>Monicha Putri</td>
+                                <td>+6201770 xxxxxx</td>
+                                <td>Address Two</td>
+                                <td>
+                                  <div class="action_btn">
+                                    <a href="./profile2.html" class="click_ripple_shine success" title="View">
+                                      <i class="icon fa fa-eye"></i>
+                                    </a>
+                                    <a href="./update2.html" class="click_ripple_shine warning" title="Edit">
+                                      <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine danger" title="Delete">
+                                      <i class="far fa-trash-alt"></i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>03</td>
+                                <td>Calvin Saputra</td>
+                                <td>+8801770 xxxxxx</td>
+                                <td>Address Three</td>
+                                <td>
+                                  <div class="action_btn">
+                                    <a href="./profile3.html" class="click_ripple_shine success" title="View">
+                                      <i class="icon fa fa-eye"></i>
+                                    </a>
+                                    <a href="./Update3.html" class="click_ripple_shine warning" title="Edit">
+                                      <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine danger" title="Delete">
+                                      <i class="far fa-trash-alt"></i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>04</td>
+                                <td>Defie Cesilia</td>
+                                <td>+6205780 xxxxxx</td>
+                                <td>Address Four</td>
+                                <td>
+                                  <div class="action_btn">
+                                    <a href="#" class="click_ripple_shine success" title="View">
+                                      <i class="icon fa fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine warning" title="Edit">
+                                      <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine danger" title="Delete">
+                                      <i class="far fa-trash-alt"></i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>05</td>
+                                <td>Devi Puspita</td>
+                                <td>+6205732 xxxxxx</td>
+                                <td>Address Five</td>
+                                <td>
+                                  <div class="action_btn">
+                                    <a href="#" class="click_ripple_shine success" title="View">
+                                      <i class="icon fa fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine warning" title="Edit">
+                                      <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine danger" title="Delete">
+                                      <i class="far fa-trash-alt"></i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>06</td>
+                                <td>Matthew Johan</td>
+                                <td>+6207556 xxxxxx</td>
+                                <td>Address Six</td>
+                                <td>
+                                  <div class="action_btn">
+                                    <a href="#" class="click_ripple_shine success" title="View">
+                                      <i class="icon fa fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine warning" title="Edit">
+                                      <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine danger" title="Delete">
+                                      <i class="far fa-trash-alt"></i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>07</td>
+                                <td>Dian Regina</td>
+                                <td>+6202567 xxxxxx</td>
+                                <td>Address Seven</td>
+                                <td>
+                                  <div class="action_btn">
+                                    <a href="#" class="click_ripple_shine success" title="View">
+                                      <i class="icon fa fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine warning" title="Edit">
+                                      <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine danger" title="Delete">
+                                      <i class="far fa-trash-alt"></i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>08</td>
+                                <td>Joel Faith</td>
+                                <td>+6213747 xxxxxx</td>
+                                <td>Address Eight</td>
+                                <td>
+                                  <div class="action_btn">
+                                    <a href="#" class="click_ripple_shine success" title="View">
+                                      <i class="icon fa fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine warning" title="Edit">
+                                      <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine danger" title="Delete">
+                                      <i class="far fa-trash-alt"></i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>09</td>
+                                <td>Noah Young</td>
+                                <td>+6219427 xxxxxx</td>
+                                <td>Address Nine</td>
+                                <td>
+                                  <div class="action_btn">
+                                    <a href="#" class="click_ripple_shine success" title="View">
+                                      <i class="icon fa fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine warning" title="Edit">
+                                      <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine danger" title="Delete">
+                                      <i class="far fa-trash-alt"></i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>10</td>
+                                <td>Seniwati</td>
+                                <td>+6215413 xxxxxx</td>
+                                <td>Address Ten</td>
+                                <td>
+                                  <div class="action_btn">
+                                    <a href="#" class="click_ripple_shine success" title="View">
+                                      <i class="icon fa fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine warning" title="Edit">
+                                      <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="click_ripple_shine danger" title="Delete">
+                                      <i class="far fa-trash-alt"></i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./javascript/app.js"></script>
+</body>
+</html>

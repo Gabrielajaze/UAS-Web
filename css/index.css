@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+.wrapper{
+    background-image: url(./Desain\ tanpa\ judul.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.container{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.register-box{
+    background-color: white;
+    border-radius: 5px;
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0 2px 6px black;
+    overflow: hidden;
+    opacity: 0.9;
+    
+}
+
+.form-top{
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgb(254, 250, 250);
+    
+}
+
+.form-top h2{
+    margin: 0;
+    text-align: center;
+}
+
+.form-top h5{
+    margin: 0;
+    text-align: center;
+}
+
+
+.form{
+    padding: 3px 35px;
+    
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+
+.form-control small{
+    font-size: 12px;
+}
+
+.form-control input{
+    border: 2px solid black;
+    border-radius: 4px;
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+    font-family: inherit;
+    margin-bottom: 2px;
+    
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input{
+    border-color: green ;
+}
+
+.form-control.error input{
+    border-color: red ;
+}
+
+
+.form-control select{
+    border: 2px solid black;
+    border-radius: 4px;
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+    font-family: inherit;
+}
+
+.form-control.success select{
+    border-color: green ;
+}
+
+.form-control.error select{
+    border-color: red ;
+}
+
+
+.form-control small {
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form-control-agreement {
+    display: block;
+    padding: 5px;
+    font-size: 15px;
+    width: 100%;
+    font-family: inherit;
+}
+
+
+.form input.submit{
+    background-color: #ee15d5;
+    border: 2px solid black;
+    color: white;
+    display: block;
+    padding: 7px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.form input.submit:hover{
+    background-color: white;
+    color:  #ee15d5;
+}
+
+@media(max-width: 299px){
+    .form-top{
+        width: 100%;
+        padding: 20px 80px;
+        background-color: rgb(254, 250, 250);
+    }
+
+}
+
+.form p{
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.form p a{
+ text-decoration: none;
+ color: #ee15d5;
+ text-align: center;
+}
+
+.form p a:hover{
+    color: #9d2222;
+   }
+       

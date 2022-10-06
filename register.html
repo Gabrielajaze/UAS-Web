@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="register-box">
+            
+                <div class="form-top">
+                    
+                    <h2>Personalia App</h2>
+                    <h5>Please fill in this form to register</h5>
+                </div>
+                <form action=".//home.html"  id="form" class="form" method="GET">
+
+                    <div class="form-control">
+                        <label for="Full Name">Full Name</label>
+                        <input type="text" placeholder="Daniel" 
+                        id="username">
+                        <small>At least 2 character</small>
+                    </div>
+                    
+                    <div class="form-control">
+                        <label for="Date of Birth">Date of Birth</label>
+                      <input type="date" id="dob"> 
+                        
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="Address">Address</label>
+                        <input type="text" placeholder="405 Davis Blvd"
+                        id="address">
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="Address">Phone Number</label>
+                        <input type="tel" placeholder=" 0812-1212-1221" 
+                        id="phone">
+                        <small>Error message</small>
+                    </div>
+                
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="example@example.com" 
+                        id="email">
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input type="password"  
+                        id="password">
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="password">Confirm Password</label>
+                        <input type="password" 
+                        id="confirm">
+                        <small>Error message</small>
+                    </div>
+            
+                    <div class="form-control-agreement">
+                        <a href="#">Terms and Conditions</a> <br>
+                        <label for="agreement">
+                            <input type="checkbox" name="agreement" class="agreement" id="agreement" value="yes">
+                        <b> I agree to the terms and conditions</b>
+                        </label>
+                    </div>
+                    
+                    
+                    <input type="submit" value="Register" class="submit">
+                    <p>Already a member?
+                        <a href="./index.html">Log In</a>
+                    </p>
+                </form>
+             
+            </div>
+            
+        </div>
+    </div>
+    <script src="./javascript/register.js"></script>
+</body>
+</html>
